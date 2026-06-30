@@ -1,0 +1,14 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.tags.contains("component")
+    order:
+      - file.name
+      - file.tags
+      - name
+      - count
+      - count_per_domain
+    columnSize:
+      note.name: 157
