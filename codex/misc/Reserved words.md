@@ -1,0 +1,7 @@
+- Domain
+- Effect
+- Realignment
+- Resonance
+- Ripple
+- Rune
+- Spell

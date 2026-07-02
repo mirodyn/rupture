@@ -14,7 +14,7 @@ formula: AB
 Does not get removed from **Active effects** during **Realignment**.
 # Flavor
 
-Flames are spreading and are hard to put down. 
+Flames are spreading and are hard to put down. Getting rid of them is neccessary as they can drag one down to death. 
 # Image
 
 #missing_art
