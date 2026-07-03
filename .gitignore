@@ -433,3 +433,6 @@ FodyWeavers.xsd
 .obsidian/workspace-mobile.json
 .obsidian/graph.json
 .obsidian/appearance.json
+
+# Local assistant project memory
+.codex/memory.md

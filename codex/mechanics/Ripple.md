@@ -10,5 +10,5 @@ Ripple is triggered by player taking [[Runes]] from designated spaces on the [[R
 Do the steps if following order:
 - Look at the [[Runes|Rune]] and [[Rune Tiles#Polarity|Polarity]] symbol on the [[Rune Tiles|Rune Tile]] you just selected from the offer.
 - Every player finds ALL [[Rune Tiles]] in their current [[Spell]] that match the [[Runes|Rune]] and [[Rune Tiles|Polarity]] of the selected [[Rune Tiles|Rune Tile]] and processes their [[Spell#Collapse|Collapse]].
-- If any spell becomes disconnected by the collapse of the affected tiles, [[Spell#Collapse|Collapse]] the chosen parts until all the spells adhere to the rules. 
+- If any spell becomes disconnected by the collapse of the affected tiles, [[Spell#Collapse|Collapse]] the chosen spell parts until all the spells adhere to the rules. (Discarting [[Incantations]] for each normally ...)
 - Add the selected tile to the [[Spell]].
