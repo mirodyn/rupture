@@ -436,3 +436,8 @@ FodyWeavers.xsd
 
 # Local assistant project memory
 .codex/memory.md
+*.STEP
+*.SLDPRT
+*.SLDASM
+*.3mf
+*.dxf
