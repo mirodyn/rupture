@@ -8,6 +8,7 @@ skulls: "0"
 hearths: "0"
 formula:
 formula_length:
+timing:
 ---
 # Effect text
 ...
