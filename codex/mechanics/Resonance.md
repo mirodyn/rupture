@@ -10,6 +10,7 @@ Most common way of acquiring Resonance is trough [[Spell#Release|Spell Release]]
 
 The [[Resonance Cards]] can be flipped during the game. Flipping means turning the [[Resonance Cards|Resonance Card]] to its other face, regardless of the face it has been facing up before. 
 If there are any [[Shard Tokens]] on the [[Resonance Cards|Resonance Card]] at the moment of the flip, remove those tokens from the card, but keep them in the [[Game Layout#Player Area|Player Area]], those can be used again later. 
-# Using the Resonance
+# Using the Resonance Ability
 
-Most of the abilities on the [[Resonance Cards]] can be activated or used by the player. Usually, the card specifies when it can be used. There are usually one ore more spaces printed on the [[Resonance Cards]] and using the ability requires placing the [[Shard Tokens|Shard Token]] of corresponding [[Domains|Domain]] from [[Game Layout#Player Area|Player Area]] to that designated space. If player does not have enough corresponding [[Shard Tokens]] to place on the [[Resonance Cards|Resonance Card]], the ability cannot be used. 
+Most of the abilities on the [[Resonance Cards]] can be used by the players during the [[Weaving Phase]], instead of [[Weave]] or [[Release]] actions.
+Resonance Abilities have a cost in form of [[Shard Tokens]] of the domain they belong to. Some can have even larger cost in form of additional [[Shard Tokens]]. The cost of the ability has to be paid BEFORE the ability is used and it's done by returning necessary [[Shard Tokens]] from the [[Game Layout#Player Area|Player Area]] to the box (removing them from the game by doing so).

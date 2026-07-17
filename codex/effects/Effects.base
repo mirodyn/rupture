@@ -1,0 +1,15 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.tags.contains("effect_card")
+    order:
+      - file.name
+      - domain
+      - note.formula
+      - formula_length
+      - hearths
+      - name
+      - skulls
+      - timing

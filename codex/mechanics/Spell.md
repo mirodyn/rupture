@@ -65,9 +65,9 @@ Every turn, player can decide to release the spell instead of continuing the [[S
 - All the [[Spell#Focused Effects||Focused Effects]] are discarded.
 - All the [[Rune Tiles]] are returned back to the [[Rune Tile Bag]].
 - All the [[Core Tiles]] are returned to their supply.
-- For each of the [[Shard Tokens]] present in the spell before the release player HAS to [[Resonance#Acquiring the Resonance|acquire the Resonance]] card of the [[Domains|Domain]] to which the [[Shard Tokens|Shard token]] belongs. 
+- For each of the [[Shard Tokens]] present in the spell before the release player HAS to [[Resonance#Acquiring Resonance|acquire the Resonance]] card of the [[Domains|Domain]] to which the [[Shard Tokens|Shard token]] belongs. 
 - Put all acquired [[Resonance Cards]] and [[Shard Tokens]] from the released spell to the [[Game Layout#Player Area|Player Area]].
-- If the [[Initiative - Tension token]] is not turned to its Balance side yet, turn it to that side. 
+- If the [[Initiative - Tension token]] is not turned to its [[Initiative - Tension token#Relieved side|Relieved side]] yet, turn it to that side. 
 # Collapse
 
 If for any reason any number of [[Rune Tiles]] becomes disconnected (Most common reason will be the [[Ripple]] event.) form the rest of the spell, the collapse of that tile(s) is triggered and needs to get resolved immediately. To resolve the collapse the player has to return the affected [[Rune Tiles]] to the [[Rune Tile Bag]] and has to discard on of his [[Incantation Cards]] following these rules:
@@ -78,10 +78,9 @@ If for any reason any number of [[Rune Tiles]] becomes disconnected (Most common
 
 In certain situations the [[Core Tiles]] of the spell can collapse as well. If this happens proceed in similar manner to the spell [[Spell#Release|Release]] procedure:
 - Return the collapsed [[Core Tiles]] to their supply.
-- For each of the [[Shard Tokens]] present on the collapsed [[Core Tiles]] player HAS to [[Resonance#Acquiring the Resonance|acquire the Resonance]] card of the [[Domains|Domain]] to which the [[Shard Tokens|Shard token]] belongs. 
+- For each of the [[Shard Tokens]] present on the collapsed [[Core Tiles]] player HAS to [[Resonance#Acquiring Resonance|acquire the Resonance]] card of the [[Domains|Domain]] to which the [[Shard Tokens|Shard token]] belongs. 
 - Put all acquired [[Resonance Cards]] and [[Shard Tokens]] from the collapsed [[Core Tiles]] to the [[Game Layout#Player Area|Player Area]].
   
 >[!TODO] TODO: Should the Collapse of the [[Core Tiles]] be more severe?
 >It might be interesting to consider making this type of collapse different from the controlled one. Maybe the player could be forced to take another [[Shard Tokens|Shard token]] from the [[Domain Boards]] and additional [[Resonance]]?
 > SOLUTION?: Keep the process the same as during the [[Spell#Release|Release]] but flip the [[Resonance Cards]] after. 
-
