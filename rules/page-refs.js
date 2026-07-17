@@ -39,15 +39,23 @@
             const entry = document.createElement('li');
             entry.className = 'toc-entry';
 
+            // Indent deeper heading levels further right (h2 = 0, h3 = 1, ...).
+            const level = parseInt(heading.tagName.slice(1), 10) - 2;
+            entry.style.setProperty('--toc-level', level);
+
             const label = document.createElement('span');
             label.className = 'toc-label';
             label.textContent = heading.textContent;
+
+            const leader = document.createElement('span');
+            leader.className = 'toc-leader';
 
             const number = document.createElement('span');
             number.className = 'toc-page';
             number.textContent = pageNumberOf(heading);
 
             entry.appendChild(label);
+            entry.appendChild(leader);
             entry.appendChild(number);
             toc.appendChild(entry);
         });

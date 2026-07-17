@@ -13,7 +13,7 @@
     max-width:210mm;
     height:297mm;
     max-height:297mm;
-    
+    margin-bottom: 5mm;
 }
 .page.left{
     background-image:url(images/background-left.png);
@@ -35,6 +35,9 @@
 
 body {
     counter-reset: page;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .page:not(.cover) {
@@ -123,15 +126,27 @@ body {
 #toc {
     list-style: none;
     padding: 0;
-    width: 100%;
+    width: 80%;
     text-align: left;
 }
 
 .toc-entry {
     display: flex;
-    justify-content: space-between;
-    gap: 6mm;
+    align-items: baseline;
+    gap: 2mm;
     margin-bottom: 2mm;
+    margin-left: calc(var(--toc-level, 0) * 8mm);
+}
+
+.toc-label,
+.toc-page {
+    white-space: nowrap;
+}
+
+.toc-leader {
+    flex: 1 1 auto;
+    border-bottom: 1px dotted currentColor;
+    margin-bottom: 0.3em;
 }
 
 @media print {
@@ -139,13 +154,13 @@ body {
 }
 
 </style>
-<body>
+<body style="background-color: rgb(18, 19, 20);">
     <div class="page cover">
     </div>
     <div class="page-break">
     </div>
     <div class="page">
-        <div class="content">
+        <div class="content" style="font-weight: bold;">
             <h2>Index</h2>
             <ul id="toc"></ul>
         </div>
