@@ -1,11 +1,18 @@
-// Resolves <span class="pageref" data-target="some-id"></span> placeholders
-// to the printed page number of the .page containing the element with that id.
-// Runs once on load and mutates the DOM to plain text, so it plays fine with
-// browser print / "Save as PDF" - by the time you print, nothing here is left
-// live, just the resolved numbers.
+// Resolves anything that needs to know which printed page an element ends up
+// on: cross-references (<span class="pageref" data-target="some-id">) and the
+// index (headings marked with data-toc get listed in #toc).
+// Runs once on load and mutates the DOM to plain text/elements, so it plays
+// fine with browser print / "Save as PDF" - by the time you print, nothing
+// here is left live, just the resolved content.
 
 (function () {
     const pages = Array.from(document.querySelectorAll('.page:not(.cover)'));
+
+    // Alternate left/right by position, starting with left (cover excluded),
+    // instead of relying on a hand-typed class per page.
+    pages.forEach(function (page, index) {
+        page.classList.add(index % 2 === 0 ? 'left' : 'right');
+    });
 
     function pageNumberOf(target) {
         const page = target.closest('.page');
@@ -25,4 +32,24 @@
 
         ref.textContent = pageNumberOf(target);
     });
+
+    const toc = document.getElementById('toc');
+    if (toc) {
+        document.querySelectorAll('[data-toc]').forEach(function (heading) {
+            const entry = document.createElement('li');
+            entry.className = 'toc-entry';
+
+            const label = document.createElement('span');
+            label.className = 'toc-label';
+            label.textContent = heading.textContent;
+
+            const number = document.createElement('span');
+            number.className = 'toc-page';
+            number.textContent = pageNumberOf(heading);
+
+            entry.appendChild(label);
+            entry.appendChild(number);
+            toc.appendChild(entry);
+        });
+    }
 })();

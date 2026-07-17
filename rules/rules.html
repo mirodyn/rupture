@@ -120,6 +120,20 @@ body {
     font-size: small;
 }
 
+#toc {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.toc-entry {
+    display: flex;
+    justify-content: space-between;
+    gap: 6mm;
+    margin-bottom: 2mm;
+}
+
 @media print {
     .page-break { break-after: page; }
 }
@@ -130,19 +144,27 @@ body {
     </div>
     <div class="page-break">
     </div>
-    <div class="page left">
+    <div class="page">
+        <div class="content">
+            <h2>Index</h2>
+            <ul id="toc"></ul>
+        </div>
+        <div class="page-number"></div>
+    </div>
+    <div class="page-break"></div>
+    <div class="page">
         <div class="content">
             <h1>Rupture</h1>
-            <h2>Components</h2>
-        <h2>Setup</h2>
-        <h2>Game modes and winning the game</h2>
+            <h2 data-toc>Components</h2>
+        <h2 data-toc>Setup</h2>
+        <h2 data-toc>Game modes and winning the game</h2>
         <div class="main-text-block">
             The Goal of the game depend on the selected game mode. In "Free for All" mode, the goal is to be the last 
             mage still standing. The game ends whne there is only one player left and thats the winner.
             In "Team" mode, the goal is to overome the opposing team. When there is only one team left, the game ends
             and the remaining team is victourious.
         </div>
-        <h2>Game structure</h2>
+        <h2 data-toc>Game structure</h2>
         <div class="main-text-block">
 
             Game is split into two altering phases:
@@ -162,17 +184,17 @@ body {
     </div>
     <div class="page-number"></div>
     </div>
-        <div class="page right">
+        <div class="page">
         <div class="content">
-            <h2 >TBD</h2>
+            <h2>TBD</h2>
         </div>
         <div class="page-number"></div>
     </div>
     <div class="page-break"></div>
-    <div class="page left">
+    <div class="page">
         <div class="content">
 
-        <h2>Action phase</h2>
+        <h2 data-toc>Action phase</h2>
         <div class="main-text-block">
              Action phase is divided into rounds. During each round, players take turns starting with the player holding the 
              <b>Initiative token.</b> During the turn, player MUST take precisely ONE of the following three actions:
@@ -246,9 +268,9 @@ body {
         <div class="page-number"></div>
     </div>
     <div class="page-break"></div>
-    <div class="page right">
+    <div class="page">
         <div class="content">
-            <h3 id="incantation-acquisition">Acquiring Incantation cards</h3>
+            <h3 id="incantation-acquisition" data-toc>Acquiring Incantation cards</h3>
             <p>
                 There are 12 <b>Incantation</b> cards available across 4 <b>Domain</b> offers. Players can 
                 choose to acquire one of them at the end of the <b>Weave</b> action IF they fulfill the requirments 
@@ -271,31 +293,31 @@ body {
         <div class="page-number"></div>
     </div>
     <div class="page-break"></div>
-    <div class="page left">
+    <div class="page">
         <div class="content">
-            <h3>Acquiring Incantation cards examples</h3>
+            <h3 data-toc>Acquiring Incantation cards examples</h3>
         </div>
         <div class="page-number"></div>
     </div>
-    <div class="page left">
+    <div class="page">
         <div class="content">
-            <h3 id="acquire-resonance">Acquiring Resonance cards</h3>
-        </div>
-        <div class="page-number"></div>
-    </div>
-    <div class="page-break"></div>
-    <div class="page right">
-        <div class="content">
-            <h2>Realignment phase</h2>
+            <h3 id="acquire-resonance" data-toc>Acquiring Resonance cards</h3>
         </div>
         <div class="page-number"></div>
     </div>
     <div class="page-break"></div>
-    <div class="page left">
+    <div class="page">
         <div class="content">
-            <h2 id="ripple">Ripple</h2>
-            <h2 id="collapse">Collapse</h2>
-            <h2 id="instability">Instability</h2>
+            <h2 data-toc>Realignment phase</h2>
+        </div>
+        <div class="page-number"></div>
+    </div>
+    <div class="page-break"></div>
+    <div class="page">
+        <div class="content">
+            <h2 id="ripple" data-toc>Ripple</h2>
+            <h2 id="collapse" data-toc>Collapse</h2>
+            <h2 id="instability" data-toc>Instability</h2>
         </div>
         <div class="page-number"></div>
     </div>
